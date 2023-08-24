@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-primary-color: #25252B;
+    --background-secondary-color: #181A1E;
+    --text-primary-color: #FAF8FC;
+    --text-secondary-color: #848691;
+
+    --flag-primary-color: #FBC65E;
+    --flag-secondary-color: #FFF1C5;
+
+    --mine-primary-color: #C0524E;
+    --mine-secondary-color: #FFD2D1;
+
+    color-scheme: dark;
+
+    font-family: "Rubik", Arial;
+}
+
+:root[theme="light"] {
+    --background-primary-color: #FAFAFA;
+    --background-secondary-color: #EAEAEA;
+    --text-primary-color: #3C3E43;
+    --text-secondary-color: #C0C0C0;
+    color-scheme: light;
+}
+
+body {
+    /* width: 100%;
+    height: 100%; */
+    width: fit-content;
+    overflow: hidden;
+    user-select: none;
+}
+
+canvas {
+    position: absolute; 
+    top: 0px;
+    left: 0px;
+    width: auto;
+    height: auto;
+    background-color: slategrey;
+    z-index: -1;
+}
+
+.control-panel {
+    margin: 10px 0 0 10px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+    font-size: x-large;
+    line-height: 40px;
+}
+
+button {
+    background-color: var(--background-primary-color);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: fit-content;
+    color: var(--text-primary-color);
+}
+
+button:disabled {
+    opacity: .3;
+}
+
+button p {
+    font-size: x-large;
+}
+
+button svg {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+button svg path {
+    fill: var(--text-primary-color);
+    color: var(--text-primary-color);
+}
+
+input[type="checkbox"] {
+    /* height: 100%; */
+    aspect-ratio: 1/1;
+    height: 40px;
+    width: fit-content;
+}
+
+#export-image {
+    width: 500px;
+    border: 5px solid black;
+}
+
+dialog {
+    flex-direction: column;
+    gap: 10px;
+
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+    background-color: var(--background-primary-color);
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+dialog[open] {
+    display: flex;
+}
+
+dialog::backdrop {
+    opacity: 1;
+    background-color: var(--background-primary-color);
+    backdrop-filter: blur(5px);
+}
+
+dialog button {
+    background-color: var(--background-secondary-color);
+}
+
+dialog form button {
+    width: 100%;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}

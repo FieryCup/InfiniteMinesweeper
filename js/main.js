@@ -217,7 +217,10 @@ this.field.addEventListener("mouseout", mouseup);
 // Touch
 this.field.addEventListener("touchstart", mousedown);
 
-this.field.addEventListener("touchmove", mousemove);
+this.field.addEventListener("touchmove", function(event) {
+    event.preventDefault();
+    mousemove(event);
+});
 
 this.field.addEventListener("touchend", mouseup);
 this.field.addEventListener("touchcancel", mouseup);

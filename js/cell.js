@@ -42,7 +42,7 @@ class Cell {
 
             let textYOffset = 1.4;
 
-            context.strokeStyle = getCSSVariable("--background-secondary-color");
+            context.strokeStyle = getCSSVariable("--background-primary-color");
             if (!(cell.isFlagged || cell.isMine)) {
                 let x = position.x;
                 let y = position.y;
@@ -97,7 +97,7 @@ class Cell {
                 text = "";
             }
             
-            drawTile(this, this.context, getCSSVariable("--background-primary-color"), text, getCSSVariable("--text-secondary-color"));
+            drawTile(this, this.context, getCSSVariable("--background-secondary-color"), text, getCSSVariable("--text-secondary-color"));
             return;
         }
     }

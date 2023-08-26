@@ -17,7 +17,7 @@ class Field {
     draw() {
         this.context.textBaseline = "top";
         
-        this.context.fillStyle = getCSSVariable("--background-secondary-color");
+        this.context.fillStyle = getCSSVariable("--background-primary-color");
         this.context.fillRect(0, 0, this.element.width, this.element.height);
 
         let viewStartPos = cameraPosition.convertCameraPosToChunkPos();

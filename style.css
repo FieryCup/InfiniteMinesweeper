@@ -40,6 +40,7 @@
 html, body {
     overflow: hidden;
     padding: 10px;
+    width: fit-content;
 }
 
 canvas {
@@ -83,7 +84,7 @@ button {
 }
 
 button:disabled {
-    opacity: .3;
+    opacity: .5;
 }
 
 button p {
@@ -146,6 +147,10 @@ footer {
     position: absolute;
     bottom: 10px;
     left: 10px;
+}
+
+a {
+    color: var(--text-primary-color);
 }
 
 .shadow {

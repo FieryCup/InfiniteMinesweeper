@@ -2,7 +2,7 @@ let gap = 0;
 let size = 30;
 let round = 3;
 
-let zoom = 2;
+let zoom = 1.8;
 
 function getTileSize() {
     return (size + gap) * zoom;

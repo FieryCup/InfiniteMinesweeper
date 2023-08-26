@@ -9,17 +9,17 @@
 </head>
 <body>
     <div class="control-panel">
-        <button onclick="returnToHome();">
+        <button class="shadow" onclick="returnToHome();">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="160 -840 640 720">
                 <path d="M160-120v-480l320-240 320 240v480H560v-280H400v280H160Z"/>
             </svg>
         </button>
-        <button onclick="window.settingsModal.showModal();">
+        <button class="shadow" onclick="window.settingsModal.showModal();">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="80 -880 800 800">
                 <path d="m388-80-20-126q-19-7-40-19t-37-25l-118 54-93-164 108-79q-2-9-2.5-20.5T185-480q0-9 .5-20.5T188-521L80-600l93-164 118 54q16-13 37-25t40-18l20-127h184l20 126q19 7 40.5 18.5T669-710l118-54 93 164-108 77q2 10 2.5 21.5t.5 21.5q0 10-.5 21t-2.5 21l108 78-93 164-118-54q-16 13-36.5 25.5T592-206L572-80H388Zm92-270q54 0 92-38t38-92q0-54-38-92t-92-38q-54 0-92 38t-38 92q0 54 38 92t92 38Z"/>
             </svg>
         </button>
-        <button onclick="window.shareModal.showModal();" disabled>
+        <button class="shadow" onclick="window.shareModal.showModal();" disabled>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="120 -880 721 800">
                 <path d="M727-80q-47.5 0-80.75-33.346Q613-146.693 613-194.331q0-6.669 1.5-16.312T619-228L316-404q-15 17-37 27.5T234-366q-47.5 0-80.75-33.25T120-480q0-47.5 33.25-80.75T234-594q23 0 44 9t38 26l303-174q-3-7.071-4.5-15.911Q613-757.75 613-766q0-47.5 33.25-80.75T727-880q47.5 0 80.75 33.25T841-766q0 47.5-33.25 80.75T727-652q-23.354 0-44.677-7.5T646-684L343-516q2 8 3.5 18.5t1.5 17.741q0 7.242-1.5 15Q345-457 343-449l303 172q15-14 35-22.5t46-8.5q47.5 0 80.75 33.25T841-194q0 47.5-33.25 80.75T727-80Z"/>
             </svg>
@@ -27,7 +27,7 @@
     </div>
     <!-- <img id="export-image" src="" alt="" srcset=""> -->
 
-    <dialog id="settingsModal">
+    <dialog class="shadow" id="settingsModal">
         <h1>Настройки</h1>
 
         <div class="row">
@@ -44,7 +44,7 @@
         </form>
     </dialog>
     
-    <dialog id="shareModal">
+    <dialog class="shadow" id="shareModal">
         <h1>Поделиться</h1>
         <form method="dialog">
             <button><p>Закрыть</p></button>

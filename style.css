@@ -37,7 +37,8 @@
 }
 
 html, body {
-    overflow:hidden;
+    overflow: hidden;
+    padding: 10px;
 }
 
 canvas {
@@ -51,7 +52,6 @@ canvas {
 }
 
 .control-panel {
-    margin: 10px 0 0 10px;
     width: fit-content;
     display: flex;
     flex-direction: row;
@@ -121,8 +121,6 @@ dialog {
     margin: auto;
     padding: 10px;
     background-color: var(--background-primary-color);
-
-    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 
 dialog[open] {
@@ -147,4 +145,8 @@ footer {
     position: absolute;
     bottom: 10px;
     left: 10px;
+}
+
+.shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
